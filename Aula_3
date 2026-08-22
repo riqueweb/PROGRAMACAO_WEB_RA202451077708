@@ -1,0 +1,55 @@
+RODADA 01 — Anatomia de um campo
+Formulário real → clicar com o botão direito num campo → Inspecionar
+
+Cada campo de formulário é uma tag input com atributos que decidem tudo. Catalogue três campos do formulário que você escolheu:
+
+campo   type=____________  name=____________
+  1     id=______________  required? ( )sim ( )nao
+
+campo   type=____________  name=____________
+  2     id=______________  required? ( )sim ( )nao
+
+campo   type=____________  name=____________
+  3     id=______________  required? ( )sim ( )nao
+Sua análise:
+
+- Os atributos name e id têm o mesmo valor nos campos que você viu? Eles servem para a mesma coisa?
+R: Site Hostil: Não, name é utilizado para preencher o campo no formulario, enquanto id "c1" é um tipo de identificação unica na pagina
+R: Site Escolhido: Sim, os campos tem o mesmo valor "name".
+
+- Algum campo usa placeholder em vez de um rótulo visível? Qual o problema disso?
+R: Site Hostil: Não utiliza.
+R: Site Escolhido: sim, porem ele sobe como um alerta quando começa a digitação. o problema seria se o placeholder sumisse ao começar digitar.
+
+- Que tipo de dado cada campo espera receber, só pelo type?
+R: 
+text -> texto
+name -> nome
+email -> endereço de email
+number -> numero
+password -> senha
+date -> data
+tel -> telefone
+
+RODADA 02 — O teste do label
+Clicar no TEXTO do rótulo (não no campo) em formulario-hostil.html e depois no formulário real
+
+Um label corretamente associado faz o clique no texto focar o campo. É um teste de 1 segundo que revela se a marcação está certa:
+
+formulario-hostil.html   clicar no rotulo focou o campo? ( )sim (X)nao
+formulario real          clicar no rotulo focou o campo? (X)sim ( )nao
+
+codigo do que FUNCIONA:
+  <label for="__________">Nome</label>
+  <input id="__________">
+Sua análise:
+
+Qual atributo do label precisa bater com qual atributo do input?
+R: Atributo for do label.
+
+Além do clique, quem mais depende dessa associação para saber o nome do campo?
+R tecnologias assistivas e auditivas, assitencias faladas para deficientes e etc]
+
+No formulário hostil, o que exatamente estava faltando?
+
+os valores baterem.
