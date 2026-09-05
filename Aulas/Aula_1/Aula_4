@@ -1,1 +1,23 @@
 
+Nome: Webert Henrique E. Ramos Turma: PW 2026.2 Data: 04 / 09 / 2026
+
+RODADA 01 — As regras que valem e as que morreram
+Site real → botão direito num título → Inspecionar → painel Styles (lado direito)
+
+O painel Styles lista TODAS as regras que miram aquele elemento, da mais forte para a mais fraca. As que perderam aparecem riscadas. Catalogue o que você vê:
+
+elemento inspecionado: <__________>  class="________________"
+
+regras que VALEM (nao riscadas):
+  1. seletor: _______________________  propriedade: ______________
+  2. seletor: _______________________  propriedade: ______________
+
+regras RISCADAS (perderam):
+  1. seletor: _______________________  propriedade: ______________
+Sua análise:
+
+1 - Quantas regras diferentes tentavam estilizar esse único elemento?
+
+2 - Escolha uma regra riscada: por que você acha que ela perdeu?
+
+3 - Existe alguma declaração com !important? Onde?
